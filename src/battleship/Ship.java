@@ -56,7 +56,6 @@ public class Ship
              this.DestroyH = new int[DH.length];
              this.DestroyV = new int[DV.length];
              
-             this.Assembler(DV,DH);
           this.hitShipH = new Image[H.length];
           this.hitShipV = new Image[V.length];
           
@@ -67,8 +66,7 @@ public class Ship
            Destroyed = new Label[V.length];
           
             this.ImageLoader(V,H);
-           // this.shipBuilder(V,H);
-            this.DestroBuild(DestroyV, DestroyH);
+            this.DestroBuild(DV, DH);
            
            
                 
@@ -116,17 +114,7 @@ public class Ship
         }
 
     }
-    public void Assembler(int[] V,int[]H){
-        
-       
-        
-        for(int i=0;i<V.length;i++){
-       DestroyV[i]= V[i];
-       DestroyH[i]=H[i];
-            
-            
-        }
-    }
+  
 
 	
 	public String getName()

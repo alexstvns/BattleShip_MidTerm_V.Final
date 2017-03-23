@@ -62,14 +62,10 @@ public class BattleShipGame extends Application  {
         primaryStage.setScene(scene);
         primaryStage.show();
         this.newGame();   // new game method handles the new game procedures
-        //this.initOcean();
-        //this.createPlayerPanel();
         this.createOptionPane();
         root.setCenter(pnlPlayer);
         root.setTop(controlPane);
-        //createShips();
      
-        //placeShips();
       
         
         this.reset.setOnAction(new EventHandler<ActionEvent>() {   // button event for reset button that will start a new game.
